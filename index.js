@@ -20,7 +20,7 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = config.PREFIX
 
-const ownerNumber = ['94789613424', '94701814946']
+const ownerNumber = ['94711814650', '94707230540']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -60,19 +60,19 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('Induwa-MD Bot Installing... ')
+console.log('Hashan-MD Bot Installing... ')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
 require("./plugins/" + plugin);
 }
 });
-console.log('Induwa-MD Bot Installed Successful ✅')
-console.log('Induwa-MD Bot Connected To WhatsApp ✅')
+console.log('Hashan-MD Bot Installed Successful ✅')
+console.log('Hashan-MD Bot Connected To WhatsApp ✅')
 
-let up = `*Induwa-MD Bot Connected Successful ✅*\n\n*Prefix: ${prefix}*`;
+let up = `*Hashan-MD Bot Connected Successful ✅*\n\n*Prefix: ${prefix}*`;
 
-conn.sendMessage("94763761192@s.whatsapp.net", { image: { url: `https://telegra.ph/file/900435c6d3157c98c3c88.jpg` }, caption: up })
+conn.sendMessage("94707230540@s.whatsapp.net", { image: { url: `https://telegra.ph/file/900435c6d3157c98c3c88.jpg` }, caption: up })
 
 }
 })
